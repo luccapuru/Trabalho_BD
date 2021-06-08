@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GerControl">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="-4.0" prefHeight="479.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabInPart" text="Participante">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TitledPane animated="false" layoutX="27.0" layoutY="16.0" text="Novo Participante">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="297.0">
+                                 <children>
+                                    <Label layoutX="16.0" layoutY="18.0" prefHeight="17.0" prefWidth="71.0" text="Identificação:" />
+                                    <Label layoutX="52.0" layoutY="51.0" text="Nome:" />
+                                    <Label layoutX="14.0" layoutY="80.0" prefHeight="17.0" prefWidth="80.0" text="Nacionalidade:" />
+                                    <Label layoutX="23.0" layoutY="144.0" text="Data de nasc:" />
+                                    <Label layoutX="50.0" layoutY="110.0" text="Função:" />
+                                    <TextField fx:id="parNome" layoutX="113.0" layoutY="47.0" />
+                                    <TextField fx:id="parNacionalidade" layoutX="113.0" layoutY="76.0" />
+                                    <DatePicker fx:id="parData" layoutX="113.0" layoutY="140.0" prefHeight="25.0" prefWidth="151.0" />
+                                    <ComboBox fx:id="parFuncao" layoutX="114.0" layoutY="106.0" prefWidth="150.0" />
+                                    <Spinner fx:id="parId" layoutX="115.0" layoutY="14.0" />
+                                    <Button fx:id="parBtn" layoutX="114.0" layoutY="216.0" mnemonicParsing="false" text="Cadastrar" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabInPat" text="Patrocinador">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TitledPane animated="false" layoutX="14.0" layoutY="14.0" text="Novo Patrocinador">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="272.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="71.0" text="Identificação:" />
+                                    <Label layoutX="50.0" layoutY="51.0" text="Nome:" />
+                                    <TextField fx:id="patNome" layoutX="111.0" layoutY="47.0" />
+                                    <Spinner fx:id="patId" layoutX="113.0" layoutY="14.0" />
+                                    <Button fx:id="patBtn" layoutX="102.0" layoutY="129.0" mnemonicParsing="false" text="Cadastrar" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Time">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TitledPane animated="false" layoutX="14.0" layoutY="14.0" text="Novo Time">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="297.0">
+                                 <children>
+                                    <Label layoutX="53.0" layoutY="18.0" text="Nome:" />
+                                    <Label layoutX="57.0" layoutY="52.0" prefHeight="17.0" prefWidth="27.0" text="País:" />
+                                    <Label layoutX="15.0" layoutY="144.0" text="Data de criação:" />
+                                    <TextField fx:id="timNome" layoutX="113.0" layoutY="14.0" />
+                                    <TextField fx:id="timPais" layoutX="114.0" layoutY="48.0" />
+                                    <DatePicker fx:id="timData" layoutX="113.0" layoutY="140.0" prefHeight="25.0" prefWidth="151.0" />
+                                    <Button fx:id="timBtnNovo" layoutX="115.0" layoutY="254.0" mnemonicParsing="false" text="Cadastrar" />
+                                    <Label layoutX="54.0" layoutY="82.0" prefHeight="17.0" prefWidth="33.0" text="Jogo:" />
+                                    <TextField fx:id="timJogo" layoutX="114.0" layoutY="78.0" />
+                                    <Label layoutX="55.0" layoutY="111.0" text="Dono:" />
+                                    <TextField fx:id="timDono" layoutX="114.0" layoutY="107.0" />
+                                    <Spinner fx:id="timIdCapitao" layoutX="115.0" layoutY="179.0" />
+                                    <Label layoutX="29.0" layoutY="183.0" prefHeight="17.0" prefWidth="58.0" text="Id Capitão:" />
+                                    <Spinner fx:id="timIdTecnico" layoutX="115.0" layoutY="214.0" />
+                                    <Label layoutX="26.0" layoutY="218.0" prefHeight="17.0" prefWidth="58.0" text="Id Tecnico:" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="329.0" layoutY="14.0" prefHeight="339.0" prefWidth="207.0" text="Incluir Membro">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="223.0">
+                                 <children>
+                                    <Spinner fx:id="timIdMembro" layoutX="87.0" layoutY="111.0" prefHeight="25.0" prefWidth="71.0" />
+                                    <Label layoutX="22.0" layoutY="115.0" prefHeight="17.0" prefWidth="64.0" text="Id Membro:" />
+                                    <Button fx:id="timBtnIncluir" layoutX="37.0" layoutY="144.0" mnemonicParsing="false" text="Incluir Membro" />
+                                    <Spinner fx:id="timIdPat" layoutX="100.0" layoutY="214.0" prefHeight="25.0" prefWidth="71.0" />
+                                    <Label layoutX="8.0" layoutY="218.0" prefHeight="17.0" prefWidth="92.0" text="Id Patrocinador:" />
+                                    <Button fx:id="timBtnIncluirPat" layoutX="37.0" layoutY="251.0" mnemonicParsing="false" text="Incluir Patrocinio" />
+                                    <Label layoutX="14.0" layoutY="28.0" text="Time:" />
+                                    <TextField fx:id="timTime" layoutX="48.0" layoutY="24.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Campeonato">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TitledPane animated="false" layoutX="14.0" layoutY="14.0" prefHeight="139.0" prefWidth="253.0" text="Novo Campeonato">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="109.0" prefWidth="251.0">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="18.0" text="Nome:" />
+                                    <TextField fx:id="camNome" layoutX="67.0" layoutY="14.0" />
+                                    <Label layoutX="20.0" layoutY="50.0" text="Prêmio:" />
+                                    <TextField fx:id="camPremio" layoutX="67.0" layoutY="46.0" />
+                                    <Button fx:id="camBtnNovo" layoutX="92.0" layoutY="80.0" mnemonicParsing="false" text="Cadastrar" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="292.0" layoutY="14.0" prefHeight="203.0" prefWidth="262.0" text="Incluir Partida">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="260.0">
+                                 <children>
+                                    <Spinner fx:id="camIdFase" layoutX="102.0" layoutY="78.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Label layoutX="46.0" layoutY="82.0" prefHeight="17.0" prefWidth="31.0" text="Fase:" />
+                                    <Button fx:id="camBtnIncluirPartida" layoutX="86.0" layoutY="142.0" mnemonicParsing="false" text="Incluir Partida" />
+                                    <Spinner fx:id="camIdRodada" layoutX="102.0" layoutY="48.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Label layoutX="31.0" layoutY="52.0" prefHeight="17.0" prefWidth="46.0" text="Rodada:" />
+                                    <Spinner fx:id="camIdNumero" layoutX="102.0" layoutY="110.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Label layoutX="29.0" layoutY="114.0" prefHeight="17.0" prefWidth="50.0" text="Numero:" />
+                                    <Label layoutX="11.0" layoutY="15.0" text="Campeonato:" />
+                                    <TextField fx:id="camCampPartida" layoutX="100.0" layoutY="11.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="14.0" layoutY="159.0" prefHeight="278.0" prefWidth="254.0" text="Incluir Time">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="252.0">
+                                 <children>
+                                    <Button fx:id="camBtnIncluirTime" layoutX="79.0" layoutY="213.0" mnemonicParsing="false" text="Incluir Jogador" />
+                                    <Label layoutX="15.0" layoutY="28.0" text="Campeonato:" />
+                                    <TextField fx:id="camCampJogador" layoutX="93.0" layoutY="24.0" />
+                                    <Label layoutX="18.0" layoutY="69.0" text="Nome Time:" />
+                                    <TextField fx:id="camNomeTime" layoutX="93.0" layoutY="65.0" />
+                                    <Label layoutX="48.0" layoutY="104.0" text="Ano:" />
+                                    <TextField fx:id="camAno" layoutX="93.0" layoutY="100.0" />
+                                    <Label layoutX="22.0" layoutY="141.0" text="Colocação:" />
+                                    <TextField fx:id="camColocacao" layoutX="93.0" layoutY="137.0" />
+                                    <Label layoutX="45.0" layoutY="177.0" text="Local:" />
+                                    <TextField fx:id="camLocal" layoutX="93.0" layoutY="173.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="292.0" layoutY="225.0" prefHeight="214.0" prefWidth="262.0" text="Incluir Jogador na Partida">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="182.0" prefWidth="260.0">
+                                 <children>
+                                    <Spinner fx:id="camIdFaseJ" layoutX="102.0" layoutY="87.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Label layoutX="47.0" layoutY="91.0" prefHeight="17.0" prefWidth="31.0" text="Fase:" />
+                                    <Spinner fx:id="camIdRodadaJ" layoutX="102.0" layoutY="57.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Button fx:id="camBtnIncluirJogador" layoutX="86.0" layoutY="156.0" mnemonicParsing="false" text="Incluir Jogador" />
+                                    <Label layoutX="40.0" layoutY="61.0" prefHeight="17.0" prefWidth="46.0" text="Rodada:" />
+                                    <Spinner fx:id="camIdNumeroJ" layoutX="102.0" layoutY="119.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Label layoutX="29.0" layoutY="123.0" prefHeight="17.0" prefWidth="50.0" text="Numero:" />
+                                    <Spinner fx:id="camIdJogador" layoutX="103.0" layoutY="24.0" prefHeight="25.0" prefWidth="145.0" />
+                                    <Label layoutX="22.0" layoutY="28.0" prefHeight="17.0" prefWidth="64.0" text="Id Jogador:" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Consulta">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="conTime" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Time" />
+                        <RadioButton fx:id="conTecnico" layoutX="185.0" layoutY="30.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Tecnico" />
+                        <RadioButton fx:id="conJogador" layoutX="92.0" layoutY="30.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Jogador" />
+                        <RadioButton fx:id="conCampeonato" layoutX="385.0" layoutY="30.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Campeonato" />
+                        <RadioButton fx:id="conPartida" layoutX="502.0" layoutY="30.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Partida" />
+                        <RadioButton fx:id="conPatrocinador" layoutX="272.0" layoutY="30.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Patrocinador" />
+                        <TextField fx:id="conPk1" layoutX="68.0" layoutY="87.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Label fx:id="conLbl1" layoutX="15.0" layoutY="91.0" text="Chave 1:" />
+                        <TextField fx:id="conPk2" layoutX="272.0" layoutY="87.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Label fx:id="conLbl2" layoutX="216.0" layoutY="91.0" text="Chave 2:" />
+                        <TextField fx:id="conPk3" layoutX="476.0" layoutY="87.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Label fx:id="conLbl3" layoutX="417.0" layoutY="91.0" text="Chave 3:" />
+                        <TextArea fx:id="conResposta" layoutX="10.0" layoutY="169.0" prefHeight="200.0" prefWidth="581.0" />
+                        <Button fx:id="conBtn" layoutX="521.0" layoutY="411.0" mnemonicParsing="false" text="Consultar" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Remoção">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="remTime" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeButtonChanged" text="Time" />
+                        <RadioButton fx:id="remTecnico" layoutX="185.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeButtonChanged" text="Tecnico" />
+                        <RadioButton fx:id="remJogador" layoutX="92.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeButtonChanged" text="Jogador" />
+                        <RadioButton fx:id="remCampeonato" layoutX="385.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeButtonChanged" text="Campeonato" />
+                        <RadioButton fx:id="remPartida" layoutX="502.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeButtonChanged" text="Partida" />
+                        <RadioButton fx:id="remPatrocinador" layoutX="272.0" layoutY="30.0" mnemonicParsing="false" onAction="#removeButtonChanged" text="Patrocinador" />
+                        <TextField fx:id="remPk1" layoutX="68.0" layoutY="87.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Label fx:id="remLbl1" layoutX="15.0" layoutY="91.0" text="Chave 1:" />
+                        <TextField fx:id="remPk2" layoutX="272.0" layoutY="87.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Label fx:id="remLbl2" layoutX="216.0" layoutY="91.0" text="Chave 2:" />
+                        <TextField fx:id="remPk3" layoutX="476.0" layoutY="87.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Label fx:id="remLbl3" layoutX="417.0" layoutY="91.0" text="Chave 3:" />
+                        <Button fx:id="remBtn" layoutX="521.0" layoutY="411.0" mnemonicParsing="false" text="Remover" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
